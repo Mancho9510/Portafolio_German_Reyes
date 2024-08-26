@@ -22,19 +22,19 @@ header {
     text-align: center;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     gap: 10px;
 }
 
-.header-content {
+/*.header-content {
     flex: auto;
 }
 
 .profile-pictrure-content{
     flex: auto;
-}
+}*/
 
 .Destacado-titulo {
     color: #22d4fd;
@@ -71,6 +71,8 @@ section {
 h2 {
     color: #51A3DA;
     font-family: "Krona One", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 p {
@@ -82,31 +84,50 @@ ul.contact-links {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
 }
 
 ul.contact-links li {
     margin: 10px 0;
-    width: 100px;
-    background-color: #22d4fd;
+    width: 200px;
     text-align: center;
-    padding: 21.5px 0px;
-    border-radius: 16px;
+    border-radius: 8px;
+    border: 2px solid #22d4fd;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 100;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.contact-links li:hover{
+background-color: #272727; 
 }
 
 ul.contact-links a {
-    color: #000;
+    color: #D7D9D0;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 ul.contact-links a:hover {
     text-decoration: underline;
+    
+}
+
+.footer{
+    padding: 14px;
+    background-color: #192F3C;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
