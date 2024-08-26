@@ -3,13 +3,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Agregué box-sizing para que funcione correctamente */
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: #102D40;
     color: #D7D9D0;
 }
@@ -18,7 +18,7 @@ header {
     background-color: #192F3C;
     color: #D7D9D0;
     padding: 10px 0;
-    margin: 20%;
+    margin: 20%; /* Revisar este valor, puede que no sea necesario */
     text-align: center;
     position: relative;
     display: flex;
@@ -28,15 +28,7 @@ header {
     gap: 10px;
 }
 
-/*.header-content {
-    flex: auto;
-}
-
-.profile-pictrure-content{
-    flex: auto;
-}*/
-
-.Destacado-titulo {
+.destacado-titulo { /* Corregí el nombre de la clase a minúsculas */
     color: #22d4fd;
 }
 
@@ -84,12 +76,11 @@ ul.contact-links {
     list-style-type: none;
     padding: 0;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    display: flex;
     justify-content: space-between;
-    flex-direction: column;
     gap: 5px;
+    flex-direction: column;
+    align-items: center;
 }
 
 ul.contact-links li {
@@ -101,29 +92,26 @@ ul.contact-links li {
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 100;
-    gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul.contact-links li:hover{
-background-color: #272727; 
+ul.contact-links li:hover {
+    background-color: #272727;
 }
 
 ul.contact-links a {
     color: #D7D9D0;
     text-decoration: none;
     font-weight: bold;
-    
 }
 
 ul.contact-links a:hover {
     text-decoration: underline;
-    
 }
 
-.footer{
+.footer {
     padding: 14px;
     background-color: #192F3C;
     text-align: center;
