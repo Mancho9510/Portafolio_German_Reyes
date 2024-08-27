@@ -12,6 +12,10 @@
 
     --fuente-Montserrat: "Montserrat", sans-serif;
     --fuente-Krona-One: "Krona One", sans-serif;
+
+    --font-size-parrafos: 1rem;
+    --font-size-titulos: 1.5rem;
+    --font-size-links: 0.8rem;
 }
 
 * {
@@ -32,12 +36,12 @@ header{
 
 .header-menu{
     display: flex;
-    gap: 10px;
+    gap: 1%;
 }
 
 .header-menu-link{
     font-family: var(--fuente-Montserrat);
-    font-size: 24px;
+    font-size: var(--font-size-titulos);
     font-weight: 600;
     background-color: var(--color-secundario);
     color: var(--color-links);
@@ -47,7 +51,7 @@ header{
 .name-content {
     background-color: var(--color-primario);
     color: var(--color-terciario);
-    padding: 10px 0;
+    padding: 1% 0;
     margin: 20%; /* Revisar este valor, puede que no sea necesario */
     text-align: center;
     position: relative;
@@ -55,7 +59,7 @@ header{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 1%;
 }
 
 .destacado-titulo { /* Corregí el nombre de la clase a minúsculas */
@@ -69,31 +73,42 @@ h1 {
 
 #profile-picture {
     position: absolute;
-    top: 10px;
+    top: 10px;/*ubicamos la imagen*/
     right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #profile-picture img {
-    width: 150px;
+    width: 150px;/*ajustamos el tamaño de la imagen*/
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10% rgba(0, 0, 0, 0.1);
     margin-left: auto;
+
 }
 
 section {
     margin: 2%;
-    padding: 20px;
+    padding: 2%;
     background-color: var(--color-terciario);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 h2 {
     color: var(--color-links);
     font-family: "Krona One", sans-serif;
-    font-size: 24px;
+    font-size: var(--font-size-parrafos);
     font-weight: 400;
 }
 
@@ -108,19 +123,19 @@ ul.contact-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5px;
+    gap: 0.5%;
     flex-direction: column;
     align-items: center;
 }
 
 ul.contact-links li {
-    margin: 10px 0;
-    width: 200px;
+    margin: 1% 0;
+    width: 50%;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 2px solid var(--color-links);
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: var(--font-size-links);
     font-weight: 100;
     display: flex;
     justify-content: center;
@@ -142,10 +157,16 @@ ul.contact-links a:hover {
 }
 
 .footer {
-    padding: 14px;
+    padding: 1.4%;
     background-color: var(--color-secundario);
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: var(--font-size-parrafos);
     font-weight: 400;
+}
+
+@media (max-width: 1200px){
+    .presentation{
+        flex-direction: column;
+    }
 }
