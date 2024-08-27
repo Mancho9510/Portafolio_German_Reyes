@@ -14,7 +14,24 @@ body {
     color: #D7D9D0;
 }
 
-header {
+header{
+    padding: 2% 0 0 15%;
+}
+
+.header-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.header-menu-link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #192F3C;
+    color: #22d4fd;
+}
+
+.name-content {
     background-color: #192F3C;
     color: #D7D9D0;
     padding: 10px 0;
@@ -53,7 +70,7 @@ h1 {
 }
 
 section {
-    margin: 20px;
+    margin: 2%;
     padding: 20px;
     background-color: #254559;
     border-radius: 5px;
